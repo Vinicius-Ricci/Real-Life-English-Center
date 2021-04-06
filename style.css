@@ -1,0 +1,270 @@
+/*Estilizações Gerais*/
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	background: gainsboro;
+}
+
+.sizePadrao{
+    width: 450px;
+    height: 450px;
+}
+
+.title{
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #111d4a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.txtConteudoPadrao{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 550;
+}
+
+/*Estilizções Menu*/
+
+nav {
+	background: #92140c;
+	height: 80px;
+	width: 100%;
+    font-family: monospace;
+    position: fixed;
+}
+
+.imgLogo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+label a:hover{
+    background: transparent;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+    font-weight: 700;
+}
+a.active, a:hover {
+	background: #111d4a;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #92140c;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #111d4a;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+/*Estilizações Container Mapa*/
+
+.containerMap{
+    height: 667px;
+    width: 100%;
+    background-color: #92140c;
+}
+
+.sizeImg{
+    width: 650px;
+    height: 350px;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+/*.btn{
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    background: #111d4a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+    border-width: 0px;
+    border-color: transparent;
+    border-radius: 20px;
+    
+} */
+
+/*Estilizações Container 1*/
+
+.container1{
+    height: 590px;
+    width: 100%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerTxt{
+    width: 300px;
+    height: 300px;
+    margin-left: -600px;
+    margin-top: 200px;
+    
+}
+
+/*Estilizações Container 2*/
+
+.container2{
+    height: 590px;
+    width: 100%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.containerTxt2{
+    width: 300px;
+    height: 300px;
+    margin-top: 250px;
+}
+
+/*Estilizações Container 3*/
+
+.container3{
+    height: 590px;
+    width: 100%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerTxt3{
+    width: 300px;
+    height: 300px;
+    margin-top: 250px;
+}
+
+/*Estilizações Container 4*/
+
+.container4{
+    height: 590px;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.centralizarImg{
+    text-align: center;
+    margin-top: -50px;
+}
+
+.centralizarTxt{
+    text-align: center;
+}
+
+
+.sizeContainer{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: 357px;
+    top: -100px;
+}
+
+/*Rodapé*/
+
+.rodape{
+    width: 100%;
+    height: 300px;
+    background-color: #92140c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.containerTxtRodape{
+    width: 400px;
+    height: 300px;
+   
+}
+
+.sizeIcon{
+    width: 48px;
+    height: 48px;
+}
+
+.centralizarTxtRodape{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.tranparent:hover{
+background: transparent;
+}

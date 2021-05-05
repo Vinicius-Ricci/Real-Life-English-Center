@@ -35,7 +35,7 @@ body {
 /*Estilizções Menu*/
 
 nav {
-	background: #92140c;
+	background: #111d4a;
 	height: 80px;
 	width: 100%;
     font-family: monospace;
@@ -59,7 +59,10 @@ nav ul li {
 	display: inline-block;
 	line-height: 80px;
 	margin: 0 5px;
+    
 }
+
+
 nav ul li a {
 	color: white;
 	font-size: 17px;
@@ -67,11 +70,19 @@ nav ul li a {
 	border-radius: 3px;
 	text-transform: uppercase;
     font-weight: 700;
+    transform: scale(1.2);
 }
-a.active, a:hover {
-	background: #111d4a;
+a:hover, a.active{
+	background: #92140c;
 	transition: .5s;
+    
 }
+
+li:hover {
+    transform: scale(1.2);
+    
+}
+
 .checkbtn {
 	font-size: 30px;
 	color: white;
@@ -101,7 +112,7 @@ a.active, a:hover {
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background: #92140c;
+		background: #111d4a;
 		top: 80px;
 		left: -100%;
 		text-align: center;
@@ -117,12 +128,13 @@ a.active, a:hover {
 	}
 	a:hover, a.active {
 		background: none;
-		color: #111d4a;
+		color: #92140c;
 	}
 	#check:checked ~ ul {
 		left: 0;
 	}
 }
+
 
 /*Estilizações Container Mapa*/
 
@@ -157,7 +169,7 @@ a.active, a:hover {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    margin-top: -360px; 
+    margin-top: -360px;
 }
 
 .transparentHover:hover{
@@ -264,6 +276,10 @@ a.active, a:hover {
     height: 48px;
 }
 
+.sizeIconTransform:hover{
+    transform: scale(1.2);
+}
+
 .centralizarTxtRodape{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -272,4 +288,8 @@ a.active, a:hover {
 
 .tranparent:hover{
 background: transparent;
+}
+
+hr{
+    width: 100%;
 }

@@ -70,7 +70,7 @@ nav ul li a {
 	border-radius: 3px;
 	text-transform: uppercase;
     font-weight: 700;
-    transform: scale(1.2);
+    transform: scale(1.2);    
 }
 a:hover, a.active{
 	background: #92140c;
@@ -290,6 +290,80 @@ li:hover {
 background: transparent;
 }
 
-hr{
-    width: 100%;
+/*Cards*/
+
+.containerG{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card{
+    background-color: #ffb700;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.card-image{  
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+    background-image: url('./src/img/intro.jpg');
+}
+
+.card-2 {
+    background-image: url('./src/img/interchange1.jpg');
+}
+
+.card-3 {
+    background-image: url('./src/img/interchange2.jpg');
+}
+
+.card-4 {
+    background-image: url('./src/img/interchange3.jpg');
+
+}
+
+.card h2{
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 550;
+}
+
+.card button {
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
+.btn-card:hover{
+    transform: translateY(2px);
 }

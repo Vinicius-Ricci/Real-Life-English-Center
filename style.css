@@ -299,11 +299,11 @@ background: transparent;
     flex-wrap: wrap;
 }
 
-.gambiarra{
-    height: 150px;
+.tituloPagina{
+    padding-top: 20px;
     width: 100%;
-    
 }
+
 
 .titleCard{
     margin-top: -50px;
@@ -400,6 +400,7 @@ background: transparent;
 
 .titleJovens{
     margin-top: 110px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: monospace;
     font-weight: bold;

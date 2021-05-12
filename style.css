@@ -419,4 +419,47 @@ background: transparent;
     align-items: center;
     margin-top: 800px;
 }
-    
+
+/*Pagina Intercambio*/
+
+
+.titleIntercambio{
+    padding-top: 100px;
+    margin-left: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #111d4a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.introducao{
+    width: 100%;
+    height: 400px;
+    background-color: #ffb700;
+}
+
+.titlePaises{
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #92140c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.titleOpcao{
+    margin-left: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #111d4a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.paises{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+

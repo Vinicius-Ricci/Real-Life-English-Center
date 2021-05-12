@@ -425,9 +425,11 @@ background: transparent;
 
 .titleIntercambio{
     padding-top: 100px;
+    text-align: center;
     margin-left: 20px;
     font-family: monospace;
     font-weight: bold;
+    text-align: center;
     color: #111d4a;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -435,7 +437,28 @@ background: transparent;
 .introducao{
     width: 100%;
     height: 400px;
-    background-color: #ffb700;
+    display: flex;
+}
+
+.txtIntro{
+    width: 80%;
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.txtIntro{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+.imgStudants{
+    width: 500px;
+    height: 300px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .titlePaises{
@@ -452,14 +475,129 @@ background: transparent;
     font-family: monospace;
     font-weight: bold;
     color: #111d4a;
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.entrarContato{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gmail{
+    width: 200px;
+    height: 50px;
+    margin-top: -170px;
+}
+
+.endGmail{
+    font-weight: bold;
+}
+
+.alinharTitleInformacao{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    color: #111d4a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*Cards Intercambio*/
+
 .paises{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.cardPaises1{
+    width: 250px;
+    height: 50vh;
+    background-color: #111d4a;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.cardPaises1:hover{
+    transition: transform 1s;
+    transform: translateY(-5px)
+}
+
+.cardPaises2:hover{
+    transition: transform 1s;
+    transform: translateY(-5px)
+}
+
+.cardPaises3:hover{
+    transition: transform 1s;
+    transform: translateY(-5px)
+}
+
+.containerimg1{
+    width: 100%;
+    height: 50%;
+    background-image: url('./src/img/toronto.jpg');
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    background-size: cover;
+}
+
+.containerimg2{
+    width: 100%;
+    height: 50%;
+    background-image: url('./src/img/EUA.jpg');
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    background-size: cover;
+}
+
+.containerimg3{
+    width: 100%;
+    height: 50%;
+    background-image: url('./src/img/Inglaterra.jpg');
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    background-size: cover;
+}
+
+.cardPaises2{
+    width: 250px;
+    height: 50vh;
+    background-color: #111d4a;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cardPaises3{
+    width: 250px;
+    height: 50vh;
+    background-color: #111d4a;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.titleCardsInter{
+    padding: 10px;
+    color: #fff;
+    font-family: monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.txtCardInter{
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 

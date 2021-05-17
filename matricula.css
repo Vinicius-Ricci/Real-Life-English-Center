@@ -1,0 +1,345 @@
+
+*{
+    /* todos os elementos, sem excessões */
+    padding: 0px;
+    /* distância do elemento até suas bordas*/
+
+    margin: 0;
+    text-decoration: none;
+     list-style: none;
+    box-sizing: border-box;
+    }
+    
+    body {
+        background: gainsboro;
+    }
+    
+    .sizePadrao{
+        width: 450px;
+        height: 450px;
+    }
+    
+    .title{
+        font-family: monospace;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        color: #111d4a;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .txtConteudoPadrao{
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 550;
+    }
+
+    .transparentPageMatricula:hover{
+        background-color: transparent;
+    }
+    
+    /*Estilizções Menu*/
+    
+    nav {
+        background: #111d4a;
+        height: 80px;
+        width: 100%;
+        font-family: monospace;
+        position: fixed;
+        margin-top: -7% ;
+    }
+    
+    .imgLogo{
+        margin-top: 18px;
+        margin-left: 20px;
+    }
+    
+    label a:hover{
+        background: transparent;
+    }
+    
+    nav ul {
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        
+    }
+    
+    
+    nav ul li a {
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transform: scale(1.2);
+    }
+    a:hover, a.active{
+        background: #92140c;
+        transition: .5s;
+        
+    }
+    
+    
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check {
+        display: none;
+    }
+    @media (max-width: 952px){
+        label.logo{
+            font-size: 30px;
+            padding-left: 50px;
+        }
+        nav ul li a{
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 858px){
+        .checkbtn {
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #111d4a;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a {
+            font-size: 20px;
+        }
+        a:hover, a.active {
+            background: none;
+            color: #92140c;
+        }
+        #check:checked ~ ul {
+            left: 0;
+        }
+    }
+    
+.container{
+    font-size: 20px;
+    background-color:white;
+    padding: 30px;
+    width: 100%;
+    height: 500px;
+    margin-block-start: 7%;
+    margin-block-end: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+h1{
+    background: white;
+    color: #92140c;
+    font-weight:bold;
+    padding:20px;
+    margin-top: -15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+   
+}
+
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 115%;
+}
+input{
+    padding:12px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+input::placeholder{
+    font-size:15px;
+    font-family:monospace ;
+}
+
+#nome{
+    width: 100%;
+    height: 45px
+}
+
+
+#label,#birthday{ 
+    width: 98%;
+    margin-left:17px;
+    display: flex;
+} 
+
+#birthday{
+    height: 45px;
+}
+
+.conjunto{
+    display: flex;
+    margin-left:29px;
+    width:190px;
+}
+#phone{
+    width: 90%;
+    height: 45px;
+}
+
+
+#email{
+    width: 180%;
+    height: 45px;
+}
+
+.conjunto2{
+    margin-right: 80px;
+}
+
+.conjunto3{
+    margin-left: 30px;
+    width: 20%;
+}
+.conjunto4{ 
+   margin-left: -5px;  
+   width: 20%;
+}
+
+#road{
+    width:100%;
+}
+
+.conjunto5{
+    margin-left:17px ;
+}
+
+
+.conjunto6{
+    margin-left: 17px;
+}
+
+#district{
+    width: 214px;
+}
+
+#birthday,#cpf,#rg::placeholder{
+    text-align: center;
+}
+
+.container2{
+    margin-top: 20px;
+}
+
+select{
+    padding:12px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+#field1{
+    margin-top: 10px;
+    width: 46%;
+    font-size: 20px;
+}
+
+#select1{
+    width: 70%;
+    margin-top: 5px;
+}
+
+
+#field2{
+    margin-top: -60px;
+    margin-left: 36%;
+    width: 60%;
+}
+
+    
+#select2{
+    width: 90%;
+    
+}
+
+.matricula{
+    background-color: #92140c;
+    
+}
+
+
+
+
+#enviar{
+    padding: 3px;
+    width:33%;
+    height: 50px;
+    background-color:#111d4a;
+    color: white;
+    margin-left:795px;
+    margin-top: -46px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.negative{
+    border-color: red;
+}
+
+
+
+/*Rodapé*/
+
+.rodape{
+    width: 100%;
+    height: 300px;
+    background-color: #92140c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    left: 0px;
+    position: absolute;
+
+}
+
+.containerTxtRodape{
+    width: 400px;
+    height: 20px;
+   
+}
+
+.sizeIcon{
+    width: 48px;
+    height: 48px;
+}
+
+.sizeIconTransform:hover{
+    transform: scale(1.2);
+}
+
+.centralizarTxtRodape{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.tranparent:hover{
+background: transparent;
+}

@@ -32,6 +32,19 @@ body {
     font-weight: 550;
 }
 
+.curso{
+    background-color: #92140c;
+}
+
+.intercambio{
+    background-color: #92140c;
+}
+
+.contato{
+    background-color: #92140c;
+}
+
+
 /*Estilizções Menu*/
 
 nav {
@@ -40,6 +53,7 @@ nav {
 	width: 100%;
     font-family: monospace;
     position: fixed;
+    z-index: 1;
 }
 
 .imgLogo{
@@ -75,13 +89,12 @@ nav ul li a {
 a:hover, a.active{
 	background: #92140c;
 	transition: .5s;
-    
 }
 
-li:hover {
-    transform: scale(1.2);
-    
+.matricula{
+    background-color: #92140c;
 }
+
 
 .checkbtn {
 	font-size: 30px;
@@ -481,11 +494,29 @@ background: transparent;
 
 .entrarContato{
     width: 100%;
-    height: 250px;
+    height: 300px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.btnContato{
+    width: 300px;
+    height: 50px;
+    background-color: #111d4a;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+.btnContato p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace;
 }
 
 .gmail{
@@ -599,5 +630,80 @@ background: transparent;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*CSS Contato*/
 
+main {
+    width: 98.9.9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    
+}
+
+.corpocontato {
+    margin-top: 2rem;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+main form input {
+    background: #ffffff;
+    width: 590px;
+    height: 47px;
+    margin-top: 1rem;
+    outline: none;
+    border: 1px solid #000000;
+    position: relative;
+	border-radius: 1px;
+	padding: 0 22px;
+	font-size: 16px;
+	color: #000000;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 96%;
+    margin-top: 0rem;
+    border: none;
+    border-radius: 1px;
+    background: #111d4a;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: monospace;
+    border: 1px solid #000000;
+    margin-right: 0em;
+    margin-bottom: 1em;
+
+}
+
+.campo {
+    margin-bottom: 1em;
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo textarea {
+    padding: 0.2zem;
+    display: block;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+	font-size: 16px;
+    border: 1px solid #000000;
+    
+}
+
+.negative{
+    border-color: red;
+}
 

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Real Life English Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matricula.css">
+  </head>
+  <body>
+    <!-- Menu da Pagina -->
+    <nav>
+        <a href="index.html" class="transparentPageMatricula"><img src="./src/img/Logo.png" alt="Logo da Empresa" class="imgLogo"></a>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+		      	<li><a href="contato.html">Contato</a></li>
+			      <li><a href="matricula.html" class="matricula">Matricula</a></li>
+            <li><a href="curso.html">Cursos</a></li>
+            <li><a href="intercambio.html">Intercambio</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+   <div class='container'>   
+      <h1>Matricule-se</h1>
+      <form id="form">
+        <div>
+          <label>Nome Completo</label>
+          <input id="nome" class="fill" type="text" name="name" placeholder="Ciclano da Silva" > <br>
+        </div>
+        <div>
+          <label id= "label">Data de Nascimento </label>
+          <input id="birthday" class="fill" type="date" name="birthday "placeholder="00/00/0000" ><br>
+        </div>
+          <div class='conjunto'>
+            <label>Telefone<br> </p> 
+            <input type="tel" id="phone"class="fill" name="phone" placeholder="(00) 00000-0000" maxlength="15" >  <br>
+          </div>
+          <div class='conjunto2'>
+            <label>E-Mail <br> </label> 
+            <input id="email"class="fill" type="email" name="email" placeholder="ciclano@gmail.com" > <br>
+         </div>
+         <div>
+            <label>RG (apenas números) <br> </label> 
+            <input id="rg" class="fill"type="number" name="rg" placeholder="12.345.678-9" maxlength="9" ><br>
+         </div>
+         <div class= 'conjunto3'>
+          <label>CPF (apenas números)<br> </label> 
+          <input id="cpf" class="fill"type="number" name="cpf" placeholder="123.456.789-12"  maxlength="11"> <br>
+       </div>
+          <div class= 'conjunto4'>
+            <label>Rua/Avenida <br> </label> 
+            <input id="road" class="fill" type="text" name="road" placeholder="Rua X ou Avenida Y"  ><br>
+          </div>
+          <div class= 'conjunto5'>
+            <label> Número<br> </label> 
+            <input id="numberhouse" class="fill" type="number" name="numberhouse" placeholder="123" ><br>
+          </div>
+          <div class= 'conjunto6'>
+            <label>Bairro <br> </label> 
+            <input id="district" type="text" name="district" placeholder="Bairro ABC" ><br>
+          </div>
+          <div class = 'container2'>
+            <div id="field1">
+              <label class="selection"> Selecione o nível de inglês </label>
+              <select id="select1">
+                <option value="">- - - - -</option>
+                <option value="introduction" id="introduction">INTRODUÇÃO</option>
+                <option value="beginner">INICIANTE</option>
+                <option value="intermediary">INTERMEDIÁRIO</option>
+                <option value="advanced">AVANÇADO</option>
+              </select> 
+            </div>
+            <div id="field2">
+                    <label class="selection turno"> Selecione o turno, aulas por semana e horário </label>
+            <select id="select2" >
+                <option value="">- - - - -</option>
+                <option value="morning-one">Matutino - Sábado das 08:00 às 10:00hrs</option>
+                <option value="morning-two">Matutino - Segunda e Quarta-feira das 08:00 às 09:00hrs </option>
+                <option value="afternoon-one">Vespertino - Sexta-feira das 14:00hrs às 16:00hrs </option>
+                <option value="afternoon-two">Vespertino - Terça e Quinta-feira das 14:00 às 15:00hrs  </option>
+                <option value="evening-one">Noturno - Terça-feira das 19:00 às 21:00hrs</option>
+                <option value="evening-two">Noturno - Quarta e Sexta-feira das 19:00 às 20:00hrs</option>
+          </select> 
+         </div>
+      </div>
+        <button type="submit" id="enviar">ENVIAR</button>
+        </form>
+        </div>
+      <div id="result"></div>
+  
+      <script>
+      addEventListener ('submit', (event) =>  {
+        event.preventDefault()
+
+        const nome= document.getElementById("nome")
+
+        nome.className = ""
+        if(!nome.value) {
+          alert ('Por favor, preencha seu nome completo!')
+          nome.className="negative";
+          return
+        }
+        const birthday = document.getElementById("birthday")
+       
+        birthday.className = ""
+
+        if(!birthday.value) {
+          alert ('Por favor, preencha o seu aniversário!')
+          birthday.className="negative";
+          return
+        }
+
+       const phone = document.getElementById("phone")
+
+        phone.className = ""
+
+        if(!phone.value) {
+          alert ('Por favor, nos informe o seu telefone!')
+          phone.className="negative";
+          return
+      }
+      
+        const email = document.getElementById("email")
+
+        email.className = ""
+
+        if(!email.value) {
+          alert ('Por favor, nos informe o seu e-mail!')
+          email.className="negative";
+          return
+    }
+     
+        const rg = document.getElementById("rg")
+
+        rg.className = ""
+
+        if(!rg.value) {
+        alert ('Por favor, digite o seu RG!')
+        rg.className="negative";
+        return
+    }
+     
+        const cpf = document.getElementById("cpf")
+
+        cpf.className = ""
+
+          if(!cpf.value) {
+            alert ('Por favor, digite o seu CPF!')
+            cpf.className="negative";
+            return
+    }
+     
+          const road = document.getElementById("road")
+
+          road.className = ""
+
+            if(!road.value) {
+              alert ('Por favor, preencha qual sua você mora!')
+              road.className="negative";
+              return
+            }
+
+          const numberhouse = document.getElementById("numberhouse")
+
+          numberhouse.className = ""
+
+            if(!numberhouse.value) {
+              alert ('Por favor, preencha o número da sua residência!')
+              numberhouse.className="negative";
+              return
+    }
+          const select1 = document.getElementById("select1")
+
+          select1.className = ""
+
+            if(!select1.value) {
+              alert ('Por favor, selecione qual é o seu nível de inglês!')
+              select1.className="negative";
+              return
+            }
+            const select2 = document.getElementById("select2")
+
+          select2.className = ""
+
+            if(!select2.value) {
+              alert ('Por favor, selecione o turno, aulas por semana e horário!')
+              select2.className="negative";
+              return
+              select2.className = ""
+
+            }
+            
+            else{
+              alert ('Sua matrícula foi realizada com sucesso, parabéns e bons estudos!')
+              document.location.reload(true)
+           
+            }
+  })
+        </script>
+        
+    </div>
+      <div class="rodape"> 
+       <div class="Icon">
+          <a href="https://www.facebook.com/reallifematao" class="tranparent"><img src="./src/img/facebook.png" alt="Facebook" id="facebook" class="sizeIcon sizeIconTransform"></a>
+       </div>
+       <div class="containerTxtRodape"> 
+        <p class="centralizarTxtRodape">AVENIDA SETE DE SETEMBRO, 519 - CENTRO <br> MATÃO-SP</p>
+       </div>
+       <div class="Icon">
+           <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" id ="instagram" class="sizeIcon sizeIconTransform"></a>
+       </div>
+      </div>  
+
+  </body>
+</html>

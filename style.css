@@ -17,6 +17,10 @@ body {
     height: 450px;
 }
 
+.transparent:hover{
+    background: transparent;
+}
+
 .title{
     font-family: monospace;
     font-weight: bold;
@@ -44,7 +48,6 @@ body {
     background-color: #92140c;
 }
 
-
 /*Estilizções Menu*/
 
 nav {
@@ -61,9 +64,6 @@ nav {
     margin-left: 20px;
 }
 
-label a:hover{
-    background: transparent;
-}
 
 nav ul {
 	float: right;
@@ -72,6 +72,7 @@ nav ul {
 nav ul li {
 	display: inline-block;
 	line-height: 80px;
+    padding: 5px;
 	margin: 0 5px;
     
 }
@@ -80,6 +81,7 @@ nav ul li {
 nav ul li a {
 	color: white;
 	font-size: 17px;
+    font-weight: bold;
 	padding: 7px 13px;
 	border-radius: 3px;
 	text-transform: uppercase;

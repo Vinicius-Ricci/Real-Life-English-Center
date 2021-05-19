@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz | Real Life English Center</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="startQuiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./src/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./src/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./src/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./src/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./src/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./src/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./src/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./src/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./src/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./src/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <h1>English Quiz - Welcome!</h1>
+    </header>
+    <section>
+        <form id="form">
+            <!-- Question 01 -->
+            <div class="question centerAlign">
+                <p class="textQuestion"><strong>1-</strong> Fill in the field below according to image:</p>
+                <div class="image centerAlign">
+                    <img src="./src/img/iconBook.png" alt="Book icon">
+                </div>
+                <input type="text" placeholder="Type here" id="question1" class="answer centerAlign">
+            </div>
+
+            <!-- Question 02 -->
+            <div class="question centerAlign">
+                <p class="textQuestion"><strong>2-</strong> Enter the color of the boy's shirt below:</p>
+                <div class="image centerAlign">
+                    <img src="./src/img/footballPlayer.jpg" alt="Football player">
+                </div>
+                <input type="text" placeholder="Type here" id="question2" class="answer centerAlign">
+            </div>
+
+            <!-- Question 03 -->
+            <div class="question centerAlign">
+                <p class="textQuestion"><strong>3-</strong> Mark the correct alternative:</p>
+                <div class="enunciation centerAlign">
+                    <label for="question3" class="textEnunciation">Did you ______ anywhere interesting last
+                        weekend?</label>
+                    <select id="question3" class="centerAlign">
+                        <option value="">-- Alternatives --</option>
+                        <option value="going">A) going</option>
+                        <option value="go">B) go</option>
+                        <option value="was">C) was</option>
+                        <option value="went">D) went</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Question 04 -->
+            <div class="question centerAlign">
+                <p class="textQuestion"><strong>4-</strong> Mark the correct alternative:</p>
+                <div class="enunciation centerAlign">
+                    <label for="question4" class="textEnunciation">George is ___ engineer</label>
+                    <select id="question4" class="centerAlign">
+                        <option value="">-- Alternatives --</option>
+                        <option value="a">A) a</option>
+                        <option value="as">B) as</option>
+                        <option value="an">C) an</option>
+                        <option value="no alternative">D) no alternative</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Question 05 -->
+            <div class="question centerAlign">
+                <p class="textQuestion"><strong>5-</strong> Read the sentence and write the verb in parentheses
+                    correctly
+                    conjugated:</p>
+                <div class="enunciation centerAlign">
+                    <p class="textEnunciation">
+                        Then, she <input type="text" placeholder="Type here" id="questionOne5" class="answer"> (meet) with her friend
+                        Jennifer and together they <br> <input type="text" placeholder="Type here" id="questionTwo5"class="answer">
+                        (have) breakfast at a little diner near the office.
+                    </p>
+                </div>
+            </div>
+
+            <button id="btnCheck" class="centerAlign">CHECK</button>
+        </form>
+    </section>
+
+    <div id="message" class="message centerAlign"></div>
+
+    <script src="startQuiz.js"></script>
+</body>
+
+</html>

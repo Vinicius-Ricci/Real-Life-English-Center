@@ -396,7 +396,7 @@ background: transparent;
     text-decoration: none;
     border: none;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: black;
     color: #fff;
     cursor: pointer;
@@ -404,8 +404,79 @@ background: transparent;
     font-weight: bold;
 }
 
-.card:hover{
+.btn-card1{
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: px;
+    background-color: black;
+    color: #fff;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ajustesCard1{
+    width: 100%;
+    height: 34px;
+}
+
+.btn-card2{
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ajustesCard2{
+    width: 100%;
+    height: 18px;
+}
+
+.btn-card3{
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ajustesCard3{
+    width: 100%;
+    height: 1px;
+}
+
+.btn-card4{
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card:hover{
+    transition: transform 1s;
+    transform: translateY(-5px)
     
 }
 
@@ -424,6 +495,20 @@ background: transparent;
     
 }
 
+.ajustesCardKid2{
+    width: 100%;
+    height: 17px;
+}
+
+.ajustesCardKid3{
+    width: 100%;
+    height: 19px;
+}
+
+.ajustesCardKid4{
+    width: 100%;
+    height: 4px;
+}
 
 .rodapeCurso{
     width: 100%;

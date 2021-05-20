@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ajuste{
+    width: 100%;
+    height: 100px;
+}
+
+.sobre{
+    background-color: #92140c;
+}
+
+body {
+    background-color: #DCDCDC;
+    font-family: monospace, sans-serif;
+}
+
+nav {
+	background: #111d4a;
+	height: 80px;
+	width: 100%;
+    font-family: monospace;
+    position: fixed;
+    margin-top: -20px;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+a:hover, a.active{
+	background: #92140c;
+	transition: .5s;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+    padding: 5px;
+	margin: 0 5px;
+    
+}
+
+nav ul li a {
+	color: white;
+	font-size: 17px;
+    font-weight: bold;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+    font-weight: 700;
+    transform: scale(1.2);
+    text-decoration: none;    
+}
+
+.LogoEmpresa {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+    width: 1300px;
+    margin: 20px auto;
+}
+
+section .company-image {
+    width: 500px;
+}
+
+section .company-image img {
+    width: 500px;
+}
+
+section .text {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+    width: fit-content;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #92140c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerTxtRodape{
+    width: 400px;
+    height: 20px;
+}
+
+.sizeIcon{
+    width: 48px;
+    height: 48px;
+}
+
+.sizeIconTransform:hover{
+    transform: scale(1.2);
+}
+
+.centralizarTxtRodape{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.tranparent:hover{
+    background: transparent;
+}
+
+.transparente:hover{
+    background: transparent;
+}

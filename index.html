@@ -30,21 +30,20 @@
     
     <!--Menu-->
 
-    <nav id="container">
+    <nav class="menu">
 		<input type="checkbox" id="check">
 		<label for="check" class="checkbtn">
 			<i class="fas fa-bars"></i>
 		</label>
-		<label><a href="index.html" id="index" class="transparent"><img src="./src/img/Logo.png" alt="logo" class="imgLogo"></a></label>
+		<label><a class="transparent" id="index" onclick="window.scroll({top: 0, left: 0, behavior: 'smooth' })" ><img src="./src/img/Logo.png" alt="logo" class="imgLogo"></a></label>
 		<ul>
-			<li><a href="sobre.html">Sobre</a></li>
-			<li><a href="contato.html">Contato</a></li>
-			<li><a href="matricula.html">Matrícula</a></li>
             <li><a href="curso.html">Cursos</a></li>
             <li><a href="intercambio.html">Intercâmbio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="matricula.html">Matrícula</a></li>
+			<li><a href="contato.html">Contato</a></li>
 
-		
 	</nav>
     <!--Container Mapa-->
 
@@ -114,6 +113,11 @@
         
         
     </div>
+
+    <div class="containerBtnScrollTop">
+        <img src="./src/img/seta-para-cima.svg"  class="btnScrollTop" onclick="window.scroll({top: 0, left: 0, behavior: 'smooth' })">
+    </div>
+
     <!--Rodapé-->
 
     <div class="rodape">
@@ -127,6 +131,5 @@
             <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" class="sizeIcon sizeIconTransform"></a>
         </div>
     </div>
-
 </body>
 </html>

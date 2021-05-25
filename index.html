@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="./src/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./src/img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./src/img/apple-icon-72x72.png">
@@ -49,20 +50,24 @@
 
     <div class="containerMap">
         <div>
-            <img src="./src/img/mapa.png" alt="mapa" class="sizeImg">
+            <img src="./src/img/mapa.png" alt="mapa" class="sizeImg" data-aos="fade-up"
+            data-aos-duration="3000">
         </div>
         <div>
-            <a href="matricula.html" class="transparentHover"><button class="btn">MATRICULE-SE AQUI</button></a>
+            <a href="matricula.html" class="transparentHover"><button class="btn"data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500">MATRICULE-SE AQUI</button></a>
         </div>
     </div>
     
 
     <!--Container Um ótimo jeito novo de aprender um idioma-->
 
-    <h1 class="title">UM OTIMO JEITO NOVO DE APRENDER OUTRO IDIOMA</h1>
+    <h1 class="title" data-aos="fade-up">UM OTIMO JEITO NOVO DE APRENDER OUTRO IDIOMA</h1>
     <div class="container1">
-        <img src="./src/img/estatua.png" class="sizePadrao">
-        <div class="containerTxt">
+        <img src="./src/img/estatua.png" class="sizePadrao" data-aos="fade-right">
+        <div class="containerTxt" data-aos="fade-left">
             <p class="txtConteudoPadrao">Nossa metodologia é Agíl e objetiva, buscando sempre o melhor aprendizado a você. Utilizamos uma coleção de livros da universidade de Cambridge na Inglaterra.</p>
         </div>
     </div>
@@ -70,15 +75,15 @@
 
     <!--Container Aulas específicas para viagens e negócios-->
     
-    <h1 class="title">AULAS ESPECIFICAS PARA VIAGENS E NEGOCIOS</h1>
+    <h1 class="title" data-aos="fade-up">AULAS ESPECIFICAS PARA VIAGENS E NEGOCIOS</h1>
     <div class="container2">
-        <div class="containerTxt2">
+        <div class="containerTxt2" data-aos="fade-right">
             <p class="txtConteudoPadrao">Se você esta a procura de aulas para se preperar para uma viagem, então essa é sua escola, proporcionamos a você , aluno ,a melhor preparação para suas aventuras.</p>
         </div>
         <div>
-            <img src="./src/img/viagens.png" alt="viagens" class="sizePadrao">
+            <img src="./src/img/viagens.png" alt="viagens" class="sizePadrao" data-aos="flip-left">
         </div>
-        <div class="containerTxt2">
+        <div class="containerTxt2" data-aos="fade-left">
             <p class="txtConteudoPadrao">Nossos professores tentam ao maximo passar a experiencia internacional e profissional da lingua inglesa que obtiveram durante os anos de trabalho.</p>
         </div>
     </div>
@@ -86,15 +91,15 @@
 
     <!--Container Aqui voce aprende de verdade-->
     
-    <h1 class="title">AQUI VOÇÊ APRENDE DE VERDADE</h1>
+    <h1 class="title" data-aos="fade-up">AQUI VOCÊ APRENDE DE VERDADE</h1>
     <div class="container3">
-        <div class="containerTxt3">
-            <p class="txtConteudoPadrao">Nossa metodologia é seguida de acordo com os protocolos de ensino da universidade de Cambridge, com audios, textos e discussões em inglês.</p>
+        <div class="containerTxt3" data-aos="zoom-in-down">
+            <p class="txtConteudoPadrao"  >Nossa metodologia é seguida de acordo com os protocolos de ensino da universidade de Cambridge, com audios, textos e discussões em inglês.</p>
         </div>
         <div>
-            <img src="./src/img/Aguia.png" alt="Aguia" class="sizePadrao">
+            <img src="./src/img/Aguia.png" alt="Aguia" class="sizePadrao" data-aos="zoom-in">
         </div>
-        <div class="containerTxt3">
+        <div class="containerTxt3" data-aos="zoom-in-left">
             <p class="txtConteudoPadrao">Nossos professores são todos muito bem preparados para o ensino, com experiencias internacionais e exames de fluência. </p>
         </div>
     </div>
@@ -102,21 +107,19 @@
 
     <!--Container Conheça nosso Intercambio!-->
 
-    <h1 class="title">CONHEÇA NOSSO INTERCAMBIO</h1>
+    <h1 class="title" data-aos="fade-up">CONHEÇA NOSSO INTERCAMBIO</h1>
     <div class="container4">
         <div> 
-            <p class="centralizarImg"><img src="./src/img/passagem.png" alt="passagem" class="sizePadrao"></p>
+            <p class="centralizarImg"><img src="./src/img/passagem.png" alt="passagem" class="sizePadrao" data-aos="flip-right"></p>
         </div>
-        <div class="sizeContainer">
+        <div class="sizeContainer" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <p class="txtConteudoPadrao centralizarTxt"> Nossa escola ainda oferece um projeto de intercambio para paises que originalmente utilizam o Inglês como lingua primaria. Confira mais na aba de <strong>INTERCÂMBIO</strong></p>
         </div>
         
         
     </div>
 
-    <div class="containerBtnScrollTop">
-        <img src="./src/img/seta-para-cima.svg"  class="btnScrollTop" onclick="window.scroll({top: 0, left: 0, behavior: 'smooth' })">
-    </div>
 
     <!--Rodapé-->
 
@@ -131,5 +134,10 @@
             <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" class="sizeIcon sizeIconTransform"></a>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 </html>

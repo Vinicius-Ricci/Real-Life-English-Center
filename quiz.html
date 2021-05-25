@@ -8,6 +8,8 @@
     <title>Quiz | Real Life English Center</title>
     <link rel="shortcut icon" href="./src/img/ms-icon-70x70.png" type="image/x-icon">
     <link rel="stylesheet" href="introQuiz.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body>
@@ -29,15 +31,15 @@
 
         </div>
         <div id="boxText">
-            <h1>
+            <h1 data-aos="fade-right">
                 Quer testar e saber como <br>
                 está o seu conhecimento <br>
                 em Inglês?
             </h1>
-            <a id="btnStart" target="_blank" href="startQuiz.html">Iniciar Quiz</a>
+            <a id="btnStart" target="_blank" href="startQuiz.html" data-aos="fade-up-right">Iniciar Quiz</a>
         </div>
         <div id="boxImage">
-            <img src="./src/img/teacher-image.svg" id="imageTeacher" alt="Teacher English">
+            <img src="./src/img/teacher-image.svg" id="imageTeacher" alt="Teacher English" data-aos="fade-left">
         </div>
     </section>
     <footer>
@@ -51,6 +53,9 @@
             <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" class="sizeIcon sizeIconTransform"></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
 </html>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="./src/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./src/img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./src/img/apple-icon-72x72.png">
@@ -42,29 +44,35 @@
 	</nav>
 
     <div class="containerIntercambio">
-        <h1 class="titleIntercambio">INTERCAMBIO REAL LIFE</h1>
+        <h1 class="titleIntercambio" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">INTERCAMBIO REAL LIFE</h1>
         <div class="introducao">
-            <div class="txtIntro">
+            <div class="txtIntro" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <p class="txtIntro">O intercambio Real Life tem o como foco principal trazer a verdadeira experiencia de um estrangeiro, nele você ira estudar em uma escola nativa do pais onde tera contato 24 horas por dia com a cultura da lingua inglesa. Nessa trajetoria você sera acompanhado por uns dos professores que ira ser seu tutor durante essa experiencia.</p>
             </div>
-            <div class="imgIntro">
+            <div class="imgIntro" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="./src/img/studants.jpg" alt="Estudantes" class="imgStudants">
             </div>
         </div>
-        <h1 class="titleOpcao">ALGUMAS OPÇÕES DE PAISES PARA VOCÊ</h1>
+        <h1 class="titleOpcao" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">ALGUMAS OPÇÕES DE PAISES PARA VOCÊ</h1>
         <div class="paises">
-           <div class="cardPaises1">
+           <div class="cardPaises1" data-aos="zoom-in">
                 <div class="containerimg1"></div>
                 <h3 class="titleCardsInter">Canada</h3>
                 <p class="txtCardInter">Como é variado este nosso irmão do norte: montanhas nevadas, florestas centenárias, vastos campos abertos e lagos com águas azul-esmeralda. Este é o <strong>Canadá</strong> um dos maiores paises do mundo</p>
 
            </div>
-           <div class="cardPaises2">
+           <div class="cardPaises2" data-aos="zoom-in">
                 <div class="containerimg2"></div>
                 <h3 class="titleCardsInter">Estados Unidos</h3>
                 <p class="txtCardInter">Os EUA são um país com 50 estados que cobrem uma vasta faixa da América do Norte, com o Alasca ao noroeste e o Havaí no Oceano Pacífico, estendendo a presença do país.</p>
            </div>
-           <div class="cardPaises3">
+           <div class="cardPaises3" data-aos="zoom-in">
                 <div class="containerimg3"></div>
                 <h3 class="titleCardsInter">Inglaterra</h3>
                 <p class="txtCardInter">A Inglaterra é a maior das quatro partes que formam o país chamado Reino Unido. As outras partes são Irlanda do Norte, Escócia e País de Gales. Londres é a capital tanto da Inglaterra quanto do Reino Unido. </p>   
@@ -72,9 +80,10 @@
 
            
         </div>
-        <h2 class="alinharTitleInformacao">PARA MAIS INFORMAÇÕES ENTRAR EM CONTATO</h2>
+        <h2 class="alinharTitleInformacao" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">PARA MAIS INFORMAÇÕES ENTRAR EM CONTATO</h2>
         <div class="entrarContato">
-            <div class="btnContato">
+            <div class="btnContato" data-aos="flip-up">
                 <a href="contato.html"><p>ENTRE EM CONTATO</p></a>
             </div>
         </div>
@@ -91,7 +100,9 @@
             <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" class="sizeIcon sizeIconTransform"></a>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

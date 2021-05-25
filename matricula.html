@@ -5,23 +5,7 @@
     <title>Matrícula | Real Life English Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="matricula.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="./src/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./src/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./src/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./src/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./src/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./src/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./src/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./src/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./src/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./src/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="notifier.css">
   </head>
   <body>
     <!-- Menu da Pagina -->
@@ -80,22 +64,22 @@
               <label class="selection"> Selecione o nível de inglês </label>
               <select id="select1">
                 <option value="">- - - - -</option>
-                <option value="introduction" id="introduction">INTRODUÇÃO</option>
-                <option value="beginner">INICIANTE</option>
-                <option value="intermediary">INTERMEDIÁRIO</option>
-                <option value="advanced">AVANÇADO</option>
+                <option value="Introdução" id="introduction">INTRODUÇÃO</option>
+                <option value="Iniciante">INICIANTE</option>
+                <option value="Intermediario">INTERMEDIÁRIO</option>
+                <option value="Avançado">AVANÇADO</option>
               </select> 
             </div>
             <div id="field2">
                     <label class="selection turno"> Selecione o turno, aulas por semana e horário </label>
             <select id="select2" >
                 <option value="">- - - - -</option>
-                <option value="morning-one">Matutino - Sábado das 08:00 às 10:00hrs</option>
-                <option value="morning-two">Matutino - Segunda e Quarta-feira das 08:00 às 09:00hrs </option>
-                <option value="afternoon-one">Vespertino - Sexta-feira das 14:00hrs às 16:00hrs </option>
-                <option value="afternoon-two">Vespertino - Terça e Quinta-feira das 14:00 às 15:00hrs  </option>
-                <option value="evening-one">Noturno - Terça-feira das 19:00 às 21:00hrs</option>
-                <option value="evening-two">Noturno - Quarta e Sexta-feira das 19:00 às 20:00hrs</option>
+                <option value="Manhã - Sabado">Matutino - Sábado das 08:00 às 10:00hrs</option>
+                <option value="Manhã - Segunda e Quarta-feira">Matutino - Segunda e Quarta-feira das 08:00 às 09:00hrs </option>
+                <option value="Tarde - Sexta-feira">Vespertino - Sexta-feira das 14:00hrs às 16:00hrs </option>
+                <option value="Tarde - Terça e Quinta">Vespertino - Terça e Quinta-feira das 14:00 às 15:00hrs  </option>
+                <option value="Noite - Terça-feira">Noturno - Terça-feira das 19:00 às 21:00hrs</option>
+                <option value="Noite - Quarta e Sexta-feira">Noturno - Quarta e Sexta-feira das 19:00 às 20:00hrs</option>
           </select> 
          </div>
       </div>
@@ -112,8 +96,9 @@
 
         nome.className = ""
         if(!nome.value) {
-          alert ('Por favor, preencha seu nome completo!')
+          notifier.show('Erro!', 'Por favor, preencha seu nome completo!', 'danger', './src/img/high_priority-48.png', 0);
           nome.className="negative";
+          nome.focus()
           return
         }
         const birthday = document.getElementById("birthday")
@@ -121,8 +106,9 @@
         birthday.className = ""
 
         if(!birthday.value) {
-          alert ('Por favor, preencha o seu aniversário!')
+          notifier.show('Erro!', 'Por favor, preencha sua data de nascimento!', 'danger', './src/img/high_priority-48.png', 0);
           birthday.className="negative";
+          birthday.focus()
           return
         }
 
@@ -131,8 +117,9 @@
         phone.className = ""
 
         if(!phone.value) {
-          alert ('Por favor, nos informe o seu telefone!')
+          notifier.show('Erro!', 'Por favor, Informe seu telefone!', 'danger', './src/img/high_priority-48.png', 0);
           phone.className="negative";
+          phone.focus()
           return
       }
       
@@ -141,8 +128,9 @@
         email.className = ""
 
         if(!email.value) {
-          alert ('Por favor, nos informe o seu e-mail!')
+          notifier.show('Erro!', 'Por favor, informe-nos seu email!', 'danger', './src/img/high_priority-48.png', 0);
           email.className="negative";
+          email.focus()
           return
     }
      
@@ -151,8 +139,9 @@
         rg.className = ""
 
         if(!rg.value) {
-        alert ('Por favor, digite o seu RG!')
+          notifier.show('Erro!', 'Por favor, informe o seu RG!', 'danger', './src/img/high_priority-48.png', 0);
         rg.className="negative";
+        rg.focus()
         return
     }
      
@@ -161,8 +150,9 @@
         cpf.className = ""
 
           if(!cpf.value) {
-            alert ('Por favor, digite o seu CPF!')
+            notifier.show('Erro!', 'Por favor, informe o seu CPF!', 'danger', './src/img/high_priority-48.png', 0);
             cpf.className="negative";
+            cpf.focus()
             return
     }
      
@@ -171,8 +161,9 @@
           road.className = ""
 
             if(!road.value) {
-              alert ('Por favor, preencha qual sua você mora!')
+              notifier.show('Erro!', 'Por favor, informe seu endereço!', 'danger', './src/img/high_priority-48.png', 0);
               road.className="negative";
+              road.focus()
               return
             }
 
@@ -181,8 +172,9 @@
           numberhouse.className = ""
 
             if(!numberhouse.value) {
-              alert ('Por favor, preencha o número da sua residência!')
+              notifier.show('Erro!', 'Por favor, preencha o numero da sua residencia!', 'danger', './src/img/high_priority-48.png', 0);
               numberhouse.className="negative";
+              numberhouse.focus()
               return
     }
           const select1 = document.getElementById("select1")
@@ -190,8 +182,9 @@
           select1.className = ""
 
             if(!select1.value) {
-              alert ('Por favor, selecione qual é o seu nível de inglês!')
+              notifier.show('Erro!', 'Por favor, selecione o nivel de inglês!', 'danger', './src/img/high_priority-48.png', 0);
               select1.className="negative";
+              select1.focus()
               return
             }
             const select2 = document.getElementById("select2")
@@ -199,16 +192,17 @@
           select2.className = ""
 
             if(!select2.value) {
-              alert ('Por favor, selecione o turno, aulas por semana e horário!')
+              notifier.show('Erro!', 'Por favor, selecione o turno!', 'danger', './src/img/high_priority-48.png', 0);
               select2.className="negative";
+              select2.focus()
               return
               select2.className = ""
 
             }
             
             else{
-              alert ('Sua matrícula foi realizada com sucesso, parabéns e bons estudos!')
-              document.location.reload(true)
+              
+              notifier.show('Parabêns!', `Você foi matriculado nivel ${select1.value} no turno ${select2.value}`, '', './src/img/ok-48.png', 0);
            
             }
   })
@@ -226,6 +220,6 @@
            <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" id ="instagram" class="sizeIcon sizeIconTransform"></a>
        </div>
       </div>  
-
+      <script src="notifier.js"></script>
   </body>
 </html>

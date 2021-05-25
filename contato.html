@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="apple-touch-icon" sizes="57x57" href="./src/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./src/img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./src/img/apple-icon-72x72.png">
@@ -54,28 +56,28 @@
             <form action="">
                 <h2 class="title">Dúvidas? Entre em contato conosco.</h>
 
-                <label for="name">
+                <label for="name" data-aos="fade-down">
                         
                     <span>Nome Completo:</span>
                     <input type="text" id="name" name="name">
                 </label>
     
-                <label for="email">
+                <label for="email" data-aos="fade-down">
                     <span>E-mail:</span>
                     <input type="email" id="email" name="email">
                 </label>
     
-                <label for="telefone">
+                <label for="telefone" data-aos="fade-up">
                     <span>Telefone:</span>
                     <input type="telefone" id="telefone" name="telefone">
                 </label>
     
-                <label for="mensagem">
+                <label for="mensagem" data-aos="fade-up">
                     <span>Mensagem:</span>
                 <div class="campo">
                     <textarea rows="6" style="width: 37em" id="mensagem" name="mensagem"></textarea>
                 </div>
-                <input type="submit" value="Enviar" id="button">
+                <input type="submit" value="Enviar" id="button" > 
             </input>
                 </label>
     
@@ -91,7 +93,8 @@
               name.className = ""
               if(!name.value) {
                 alert ('Por favor, preencha seu nome completo!')
-                nome.className="negative";
+                name.className="negative";
+                name.focus()
                 return
               }
               const email = document.getElementById("email")
@@ -101,6 +104,7 @@
               if(!email.value) {
                 alert ('Por favor, preencha o seu email!')
                 email.className="negative";
+                email.focus()
                 return
               }
       
@@ -111,6 +115,7 @@
               if(!telefone.value) {
                 alert ('Por favor, nos informe o seu telefone!')
                 telefone.className="negative";
+                telefone.focus()
                 return
             }
       
@@ -140,6 +145,9 @@
             <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" class="sizeIcon sizeIconTransform"></a>
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

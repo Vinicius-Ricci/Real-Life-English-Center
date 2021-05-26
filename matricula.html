@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Matrícula | Real Life English Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/android-chrome-512x512.png">
     <link rel="stylesheet" href="matricula.css">
     <link rel="stylesheet" href="notifier.css">
   </head>
@@ -80,7 +83,7 @@
                 <option value="Tarde - Terça e Quinta">Vespertino - Terça e Quinta-feira das 14:00 às 15:00hrs  </option>
                 <option value="Noite - Terça-feira">Noturno - Terça-feira das 19:00 às 21:00hrs</option>
                 <option value="Noite - Quarta e Sexta-feira">Noturno - Quarta e Sexta-feira das 19:00 às 20:00hrs</option>
-          </select> 
+          </select>
          </div>
       </div>
         <button type="submit" id="enviar">ENVIAR</button>
@@ -202,7 +205,7 @@
             
             else{
               
-              notifier.show('Parabêns!', `Você foi matriculado nivel ${select1.value} no turno ${select2.value}`, '', './src/img/ok-48.png', 0);
+              notifier.show('Parabéns!', `Você foi matriculado no nivel ${select1.value} no turno ${select2.value}`, 'success', './src/img/ok-48.png', 0);
            
             }
   })

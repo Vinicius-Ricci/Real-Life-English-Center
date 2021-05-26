@@ -8,24 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="./src/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./src/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./src/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./src/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./src/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./src/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./src/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./src/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./src/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./src/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="notifier.css">
     <title>Contato | Real Life English Center</title>
 </head>
 <body>
@@ -69,13 +55,13 @@
     
                 <label for="telefone" data-aos="fade-up">
                     <span>Telefone:</span>
-                    <input type="telefone" id="telefone" name="telefone">
+                    <input type="telefone" id="phone" name="telefone">
                 </label>
     
                 <label for="mensagem" data-aos="fade-up">
                     <span>Mensagem:</span>
                 <div class="campo">
-                    <textarea rows="6" style="width: 37em" id="mensagem" name="mensagem"></textarea>
+                    <textarea rows="6" style="width: 37em" id="message" name="mensagem"></textarea>
                 </div>
                 <input type="submit" value="Enviar" id="button" > 
             </input>
@@ -92,7 +78,7 @@
       
               name.className = ""
               if(!name.value) {
-                alert ('Por favor, preencha seu nome completo!')
+                notifier.show('Erro!', 'Por favor, preencha seu nome completo!', 'danger', './src/img/high_priority-48.png', 0);
                 name.className="negative";
                 name.focus()
                 return
@@ -102,32 +88,39 @@
               email.className = ""
       
               if(!email.value) {
-                alert ('Por favor, preencha o seu email!')
+                notifier.show('Erro!', 'Por favor, preencha o seu email!', 'danger', './src/img/high_priority-48.png', 0);
                 email.className="negative";
                 email.focus()
                 return
               }
       
-             const telefone = document.getElementById("telefone")
+             const telefone = document.getElementById("phone")
       
               phone.className = ""
       
-              if(!telefone.value) {
-                alert ('Por favor, nos informe o seu telefone!')
+              if(!phone.value) {
+                notifier.show('Erro!', 'Por favor, informe o seu telefone!', 'danger', './src/img/high_priority-48.png', 0);
                 telefone.className="negative";
                 telefone.focus()
                 return
             }
       
-            const mensagem = document.getElementById("mensagem")
+            const message = document.getElementById("message")
       
-            mensagem.className = ""
+            message.className = ""
       
-              if(!email.value) {
-                alert ('Por favor, nos informe o seu mensagem!')
-                mensagem.className="negative";
+              if(!message.value) {
+                notifier.show('Erro!', 'Por favor, nos informe uma mensagem!', 'danger', './src/img/high_priority-48.png', 0);
+                message.className="negative";
+                message.focus()
                 return
           }
+
+          else{
+              
+              notifier.show('Muito Obrigado!', `Entraremos em contato em breve ${name.value}`, '', './src/img/ok-48.png', 0);
+           
+            }
       
         })
         </script>
@@ -149,5 +142,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="notifier.js"></script>
 </body>
 </html>
